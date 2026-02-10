@@ -8,25 +8,25 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <section class="home">
+    <section id="home">
         <h1 id="inicio">Hola, Soy Silvia</h1>
         <p class="description">Me proyecto como desarrolladora web, 
             especializada en crear paginas web para negocios digitales.</p>
-        <button onclick="goMenu()" id="more">Más acerca de mi</button>
+        <button onclick="goMenu()">Más acerca de mi</button>
     </section>
     <header id="menu">
         <nav>
             <ul class="lista">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#image1">Sobre mí</a></li>
-                <li><a href="">Contacto</a></li>
+                <li><button onclick="irInicio()">Inicio</button> </li>
+                <li><button onclick="sobreMi()">Acerca de mi</button> </li>
+                <li><button onclick="contacto()">Contacto </button> </li>
             </ul>
         </nav>
     </header>
     <section class="content">
         <div class="child-content1">
             <img src="/image/foto perfil.JPG" alt="" class="img1" id="image1">
-            <p>Diseño y desarrollo experiencias digitales responsivas y centradas en 
+            <p id="myExperience">Diseño y desarrollo experiencias digitales responsivas y centradas en 
                 el usuario, aplicando buenas prácticas de diseño y desarrollo web. 
                 Desarrollo páginas web y aplicaciones claras, funcionales y visualmente 
                 atractivas, con atención al detalle y al rendimiento. Me involucro 
@@ -47,8 +47,32 @@
                 usuario. Cada proyecto fue una oportunidad para seguir creciendo, adaptarme a nuevos 
                 desafíos y mejorar continuamente.</p>
         </div>
-
     </section>
-    <section></section>
+    <section class="formularioContacto">
+        <img src="/image/contacto.png" alt="" class="imgContact">
+        <form id="contactame">
+        <h2>formulario de Contacto</h2>
+         <div class="campo">
+        <label for="name">Nombre: </label>
+            <input type="text" id="name" required>
+        </div>
+        <div class="campo">
+        <label for="email">Correo Electronico: </label>
+            <input type="email" id="email" required>
+        
+        </div>
+        <div class="campo">
+        <label for="case">Asunto: </label>
+            <input type="text" id="case" required>
+        
+        </div>
+        <div class="campo">
+        <label for="message">Mensaje:   </label>
+            <textarea class="textarea2" cols="37" rows="5" id="message">Escriba su mensaje aquí</textarea>
+      
+        </div>
+        <button class="button-contact">Enviar Mensaje</button>
+    </form>
+    </section>
 </body>
 </html>

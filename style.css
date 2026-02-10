@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.home{
+#home{
     height: 100vh;
     background: #111;
     color: white;
@@ -15,7 +15,7 @@ body {
 
 #menu{
     height: 5vh;
-    background-color: red;
+    background-color: rgb(158, 103, 103);
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
@@ -32,8 +32,8 @@ display: flex;
 }
 
 .content{
-    background-color: blueviolet;
-    height: 80vh;
+    background-color: rgb(155, 116, 122);
+    height: 100vh;
     width: 100vw;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -43,7 +43,7 @@ display: flex;
 }
 
 .child-content1{
-    background-color: lightblue;
+    background-color: rgb(181, 137, 187);
     border-radius: 20px;
     margin: 5px;
     padding: 5px 10px;
@@ -62,7 +62,7 @@ display: flex;
 }
     
 .child-content2{
-    background-color: rgb(203, 238, 236);
+    background-color: rgb(167, 103, 154);
     border-radius: 20px;
      height: 50%;
     display: flex;
@@ -81,7 +81,7 @@ display: flex;
 }
 
 .child-content3{
-    background-color: lightgray;
+    background-color: rgb(140, 98, 138);
     border-radius: 20px;
      height: 50%;
     display: flex;
@@ -96,4 +96,53 @@ display: flex;
     height: 200px;
     width: 195px;
     object-fit: cover;
+}
+
+header nav ul li button {
+    border: none;
+    cursor: pointer;
+}
+
+.formularioContacto{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+ background-color: rgb(172, 155, 173);  
+}
+
+.imgContact{
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 8px;
+    margin-bottom: 16px;
+     margin-right: 200px;
+}
+
+.campo input{
+    gap: 20px;
+    padding-bottom: 10px 10px;
+}
+
+#home {
+    background-color: #000;
+    animation: fondoSuave 4s ease-in-out infinite alternate;
+}
+
+@keyframes fondoSuave {
+    from {
+        background-color: rgb(169, 141, 141);
+    }
+    to {
+        background-color: #834c4c;
+    }
 }
