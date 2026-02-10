@@ -13,9 +13,16 @@ body {
     align-items: center;
 }
 
+h1{
+    font-size: 100px;
+}
+
+.description{
+    font-size: 20px;
+}
 #menu{
     height: 5vh;
-    background-color: rgb(158, 103, 103);
+    background-color: whitesmoke;
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
@@ -29,6 +36,13 @@ display: flex;
     margin: 0;
     padding: 0;
     font-size: 22px;
+    background-color: whitesmoke;
+}
+.lista button{
+    border: none;
+    background-color: transparent;
+    font-size: 1.2rem;
+    color: black;
 }
 
 .content{
@@ -131,6 +145,7 @@ header nav ul li button {
 .campo input{
     gap: 20px;
     padding-bottom: 10px 10px;
+    height: 30px;
 }
 
 #home {
