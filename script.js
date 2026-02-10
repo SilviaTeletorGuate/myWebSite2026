@@ -1,15 +1,12 @@
-const goMenu() {
+const goMenu =() =>{
         document.getElementById("menu").scrollIntoView({ behavior: "smooth" });
     }
-
-    const irInicio(){
+    const irInicio =() =>{
         document.getElementById("home").scrollIntoView({behavior:"auto"})
     }
-
-    const sobreMi(){
+    const sobreMi=() =>{
         document.getElementById("myExperience").scrollIntoView({behavior:"smooth"})
     }
-
-    const contacto() {
+    const contacto=() =>{
         document.getElementById("contactame").scrollIntoView({behavior:"smooth"})
     }
